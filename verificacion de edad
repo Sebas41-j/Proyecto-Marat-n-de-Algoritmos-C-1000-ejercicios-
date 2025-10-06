@@ -1,0 +1,14 @@
+#include <iostream>
+int main() {
+    int edad;
+    do {
+        std::cout << "Ingrese su edad: ";
+        std::cin >> edad;
+        if (edad < 0 || edad > 120) {
+            std::cout << "Edad no valida. Ingrese un valor entre 0 y 120." << std::endl;
+        }
+    } while (edad < 0 || edad > 120);
+
+    std::cout << "Edad válida ingresada: " << edad << " años." << std::endl;
+    return 0;
+}
