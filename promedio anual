@@ -1,0 +1,15 @@
+#include <iostream>
+int main() {
+    double calif1, calif2, calif3;
+    std::cout << "Ingrese la primera calificación: ";
+    std::cin >> calif1;
+    std::cout << "Ingrese la segunda calificación: ";
+    std::cin >> calif2;
+    std::cout << "Ingrese la tercera calificación: ";
+    std::cin >> calif3;
+
+    double promedio = (calif1 + calif2 + calif3) / 3;
+    std::cout << "El promedio es: " << promedio << std::endl;
+
+    return 0;
+}
