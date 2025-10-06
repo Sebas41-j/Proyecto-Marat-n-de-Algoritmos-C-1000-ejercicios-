@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+int main() {
+    double radio;
+    do {
+        std::cout << "Ingrese el radio del círculo: ";
+        std::cin >> radio;
+        if (radio <= 0) {
+            std::cout << "El radio debe ser mayor que 0." << std::endl;
+        }
+    } while (radio <= 0);
+
+    double area = M_PI * radio * radio;
+    std::cout << "El área del círculo es: " << area << std::endl;
+    return 0;
+}
