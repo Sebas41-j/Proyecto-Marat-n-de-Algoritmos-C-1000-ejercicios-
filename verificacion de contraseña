@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+int main() {
+    std::string contrasena;
+    do {
+        std::cout << "Ingrese la contraseña (mínimo 6 caracteres): ";
+        std::cin >> contrasena;
+        if (contrasena.length() < 6) {
+            std::cout << "La contraseña es demasiado corta. Debe tener al menos 6 caracteres." << std::endl;
+        }
+    } while (contrasena.length() < 6);
+
+    std::cout << "Contraseña válida ingresada." << std::endl;
+    return 0;
+}
