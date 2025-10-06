@@ -1,0 +1,25 @@
+#include <iostream>
+int main() {
+    double calificacion;
+    do {
+        std::cout << "Ingrese la calificación del estudiante (de 0 a 10): ";
+        std::cin >> calificacion;
+        if (calificacion < 0 || calificacion > 10) {
+            std::cout << "Calificación no válida. Ingrese un valor entre 0 y 10." << std::endl;
+        }
+    } while (calificacion < 0 || calificacion > 10);
+
+    if (calificacion >= 9.0) {
+        std::cout << "A" << std::endl;
+    } else if (calificacion >= 7.0) {
+        std::cout << "B" << std::endl;
+    } else if (calificacion >= 5.0) {
+        std::cout << "C" << std::endl;
+    } else if (calificacion >= 3.0) {
+        std::cout << "D" << std::endl;
+    } else {
+        std::cout << "F" << std::endl;
+    }
+
+    return 0;
+}
