@@ -1,0 +1,12 @@
+#include <iostream>
+int main() {
+    int numero, suma = 0;
+    do {
+        std::cout << "Ingrese un número (ingrese 0 para terminar): ";
+        std::cin >> numero;
+        suma += numero;
+    } while (numero != 0);
+
+    std::cout << "La suma total es: " << suma << std::endl;
+    return 0;
+}
